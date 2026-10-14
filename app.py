@@ -39,5 +39,5 @@ if st.button('Fetch Weather'):
         col2.metric("Humidity 💦", f"{humidity}%")
         col3.metric('Wind Speed 🍃', f"{wind_speed} m/s")
         col4.metric("Weather Condition 🌦️", f"{weather_condition.title()}")
-    else:
+else:
         st.error("City not found or invalid API key. Please check your inputs!")
